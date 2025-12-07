@@ -2,7 +2,7 @@
   "name": "replacely",
   "description": "A extension to help you learning foreign languages as you browse the web",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "scripts": {
     "dev": "wxt",
