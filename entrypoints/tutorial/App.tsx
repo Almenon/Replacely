@@ -27,7 +27,7 @@ export default function App() {
     return (
         <div className="tutorial-container">
             <div className="tutorial-header">
-                <h1>Welcome to Word Replacer!</h1>
+                <h1>Welcome to Replacely!</h1>
             </div>
 
             <div className="tutorial-content">

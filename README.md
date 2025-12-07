@@ -1,2 +1,2 @@
-# skunk1
+# Replacely
 A chrome extension to help you practice learning languages

@@ -1,5 +1,5 @@
 import extensions_button from '@/assets/extensions_button.png';
-import extension_icon from '@/public/wxt.svg';
+import extension_icon from '@/public/icon.svg';
 import './TutorialPage3.css';
 
 export default function TutorialPage3() {
