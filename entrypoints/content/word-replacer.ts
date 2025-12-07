@@ -33,11 +33,11 @@ export interface MatchResult {
   replacedSplitText: (string | ReplacementObject)[];
 }
 
-export default class WordReplacer{
+export default class WordReplacer {
 
   private activeReplacements: ReplacementRecord[] = [];
 
-  constructor(public language: Language){}
+  constructor(public language: Language) { }
 
 
   /**

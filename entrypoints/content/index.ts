@@ -17,7 +17,7 @@ export default defineContentScript({
 
     async function initializeWordStorageService() {
       currentLanguage = await ConfigService.getActiveLanguage() as Language;
-      if(!currentLanguage) throw new Error("no active language")
+      if (!currentLanguage) throw new Error("no active language")
       currentWordStorageService = new WordStorageService(currentLanguage);
       console.log(`Initialized word storage service for language: ${currentLanguage}`);
     }

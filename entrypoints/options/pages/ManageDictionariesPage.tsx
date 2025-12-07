@@ -1,7 +1,7 @@
 
+import { Language } from '@/lib/storage';
 import { useState } from 'react';
 import { LanguageSwitcher } from '../components/LanguageSwitcher';
-import { Language } from '@/lib/storage';
 
 export function ManageDictionariesPage() {
     const [currentLanguage, setCurrentLanguage] = useState<Language>();

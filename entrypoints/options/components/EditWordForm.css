@@ -136,11 +136,11 @@
   .edit-inputs {
     grid-template-columns: 1fr;
   }
-  
+
   .edit-actions {
     justify-content: stretch;
   }
-  
+
   .save-button,
   .cancel-button {
     flex: 1;

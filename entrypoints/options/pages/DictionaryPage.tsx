@@ -20,7 +20,7 @@ export function DictionaryPage() {
 
                 // Get the active language
                 const activeLanguage = await ConfigService.getActiveLanguage();
-                if(!activeLanguage) throw new Error('no active language')
+                if (!activeLanguage) throw new Error('no active language')
                 setCurrentLanguage(activeLanguage);
 
                 // Create WordStorageService instance for the active language
