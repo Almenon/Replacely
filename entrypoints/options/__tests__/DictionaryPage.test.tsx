@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { beforeEach, describe, expect, it, vi } from 'vitest';
 import ISO6391 from 'iso-639-1';
+import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 import { ConfigService, Language, WordStorageService } from '../../../lib/storage';
 import { DictionaryPage } from '../pages/DictionaryPage';

@@ -44,7 +44,7 @@ describe('ConfigService', () => {
 
     describe('getConfig', () => {
         it('should return configuration from storage', async () => {
-            const expectedConfig: AppConfig = { selectedLanguage: spanish};
+            const expectedConfig: AppConfig = { selectedLanguage: spanish };
             mockStorage.getValue.mockResolvedValue(expectedConfig);
 
             const result = await ConfigService.getConfig();
@@ -56,7 +56,7 @@ describe('ConfigService', () => {
 
     describe('setConfig', () => {
         it('should save configuration to storage', async () => {
-            const config: AppConfig = { selectedLanguage: spanish};
+            const config: AppConfig = { selectedLanguage: spanish };
 
             await ConfigService.setConfig(config);
 
@@ -64,7 +64,7 @@ describe('ConfigService', () => {
         });
 
         it('should throw error when storage fails', async () => {
-            const config: AppConfig = { selectedLanguage: spanish};
+            const config: AppConfig = { selectedLanguage: spanish };
             const storageError = new Error('Storage error');
             mockStorage.setValue.mockRejectedValue(storageError);
             const consoleSpy = vi.spyOn(console, 'error').mockImplementation(() => { });
@@ -88,7 +88,7 @@ describe('ConfigService', () => {
 
     describe('setActiveLanguage', () => {
         it('should update the selected language in config', async () => {
-            const currentConfig = { selectedLanguage: spanish};
+            const currentConfig = { selectedLanguage: spanish };
             mockStorage.getValue.mockResolvedValue(currentConfig);
 
             const english = {

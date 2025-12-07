@@ -13,7 +13,7 @@ vi.mock('#imports', () => ({
 }));
 
 describe('WordStorageService', () => {
-    
+
     const spanish = { code: 'es', name: 'spanish', nativeName: 'espanol' }
 
     beforeEach(() => {
