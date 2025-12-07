@@ -11,7 +11,7 @@ export default defineConfig({
     browser_specific_settings: {
       gecko: {
         id: '@replacely.almenon',
-        // @ts-ignore - WXT doesn't support this field yet
+        // @ts-expect-error - WXT doesn't support this field yet
         data_collection_permissions: {
           required: ['none'],
         },
