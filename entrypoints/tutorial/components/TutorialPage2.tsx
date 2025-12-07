@@ -22,7 +22,7 @@ export default function TutorialPage2() {
 
     const handleAddWord = async (original: string, replacement: string) => {
         try {
-            if(!selectedLanguage) throw new Error("no language set")
+            if (!selectedLanguage) throw new Error("no language set")
             const w = new WordStorageService(selectedLanguage)
             await w.addWordPair(original, replacement);
 
@@ -32,7 +32,7 @@ export default function TutorialPage2() {
             // Apply word replacement to the demo text element
             if (demoTextRef.current) {
                 // Reset the demo text to original
-                demoTextRef.current.innerHTML = demoText;
+                demoTextRef.current.innerText = demoText;
 
                 // Get all word pairs from storage and apply them
                 const allWordPairs = await w.getWordPairs();
