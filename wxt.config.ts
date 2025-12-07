@@ -8,5 +8,14 @@ export default defineConfig({
   },
   manifest: {
     permissions: ['storage'],
+    browser_specific_settings: {
+      gecko: {
+        id: '@replacely.almenon',
+        // @ts-ignore - WXT doesn't support this field yet
+        data_collection_permissions: {
+          required: ['none'],
+        },
+      },
+    },
   },
 });
