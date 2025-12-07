@@ -1,6 +1,6 @@
 # personal
 personal
-*.vscode-workspace
+*.code-workspace
 .kiro
 
 # Logs
