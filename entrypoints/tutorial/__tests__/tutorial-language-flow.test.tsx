@@ -1,7 +1,7 @@
 import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { beforeEach, describe, expect, it, vi } from 'vitest';
 import ISO6391 from 'iso-639-1';
+import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 import { ConfigService } from '../../../lib/storage';
 import TutorialPage1 from '../components/TutorialPage1';
@@ -36,8 +36,7 @@ describe('Tutorial Language Flow Integration Tests', () => {
         });
 
         // Should show language selection step
-        expect(screen.getByText('Choose your dictionary language')).toBeInTheDocument();
-        expect(screen.getByText(/Select the language you want to learn/)).toBeInTheDocument();
+        expect(screen.getByText('Choose the language you want to learn')).toBeInTheDocument();
 
         // Should show language selector with updated placeholder
         expect(screen.getByPlaceholderText('Search for a language...')).toBeInTheDocument();
@@ -146,7 +145,7 @@ describe('Tutorial Language Flow Integration Tests', () => {
         // Should show loading message initially (very briefly)
         // Since we removed the async loading, this test just verifies the component renders
         await waitFor(() => {
-            expect(screen.getByText('Choose your dictionary language')).toBeInTheDocument();
+            expect(screen.getByText('Choose the language you want to learn')).toBeInTheDocument();
         });
 
         expect(screen.queryByText('Loading...')).not.toBeInTheDocument();
