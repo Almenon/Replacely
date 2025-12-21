@@ -41,11 +41,10 @@ export default function TutorialPage1({ onLanguageSelected }: TutorialPage1Props
             <div className="tutorial-step">
                 <h2 className="step-header">
                     <span className="step-number">1</span>
-                    <span className="step-text">Choose your dictionary language</span>
+                    <span className="step-text">Choose the language you want to learn</span>
                 </h2>
                 <p className="step-description">
-                    Select the language you want to learn. Your dictionary will store word pairs
-                    for this language, and you can switch between different languages later.
+                    If you are learning multiple, just select the current one :)
                 </p>
             </div>
 
