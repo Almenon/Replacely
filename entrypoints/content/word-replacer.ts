@@ -54,7 +54,8 @@ export default class WordReplacer {
     // Find all matches for all targets
     const replacements: ReplacementObject[] = []
     for (const target in replacementTargets) {
-      const replacementBetweenWordBoundaries = new RegExp(`\\b${target}\\b`, 'gi');
+      const word_break = /\p{Script=Han}/u.test(target) ? '' : '\\b'
+      const replacementBetweenWordBoundaries = new RegExp(word_break + target + word_break, 'gi');
       for (const match of textContent.matchAll(replacementBetweenWordBoundaries)) {
         replacements.push(new ReplacementObject(match, replacementTargets[target], target));
       }

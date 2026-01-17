@@ -17,7 +17,8 @@ describe('word-replacer', () => {
     'worker': '工人',
     'workers': '工人',
     'write': '写',
-    'bucket': '桶'
+    'bucket': '桶',
+    '熊': 'bear'
   };
 
   // Helper function to create ReplacementObject for tests
@@ -35,6 +36,13 @@ describe('word-replacer', () => {
   });
 
   describe('findMatch', () => {
+    it('should work for chinese characters', () => {
+      const node = document.createTextNode('Papa 熊');
+      const result = w.replaceTargetsInText(node, replacementTargets);
+      expect(result?.replacedSplitText[0]).toEqual("Papa ");
+      expect((result?.replacedSplitText[1] as ReplacementObject).replacementValue).toEqual("bear");
+    });
+
     it('should return null for node without text content', () => {
       const node = document.createElement('div');
       const result = w.replaceTargetsInText(node, replacementTargets);
