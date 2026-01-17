@@ -5,6 +5,9 @@ A chrome extension to help you practice foreign language words as you browse the
 - You control what words you want to practice
 - Free and open-source
 
+*Chrome*: You can install it in the [Chrome extenstion store](https://chromewebstore.google.com/detail/replacely/bmlphjmjfcfbkfmbeffkmhbedinpaegj?authuser=0&hl=en).
+
+*Firefox*: You can install it in the [Firefox addon store](https://addons.mozilla.org/en-US/firefox/addon/replacely/)
 
 ---
 
