@@ -1,4 +1,4 @@
-# Replacely
+# Replacely ![example workflow](https://github.com/almenon/replacely/actions/workflows/ci.yml/badge.svg)
 A chrome extension to help you practice foreign language words as you browse the web. 
 
 - It works with any language!
